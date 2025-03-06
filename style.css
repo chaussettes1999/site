@@ -1,6 +1,6 @@
 :root {
-	--bg-color: #d2d2d2;
-	--fg-color: #2d2d2d;
+    --bg-color: #d2d2d2;
+    --fg-color: #2d2d2d;
 }
 
 @media(prefers-color-scheme: dark) {
@@ -11,100 +11,100 @@
 }
 
 @font-face {
-	font-family: Liberation;
-	src: url("fonts/LiberationSans-Regular.ttf");
+    font-family: Liberation;
+    src: url("fonts/LiberationSans-Regular.ttf");
 }
 
 @font-face {
-	font-family: Ubuntu;
-	src: url("fonts/Ubuntu-Regular.ttf");
+    font-family: Ubuntu;
+    src: url("fonts/Ubuntu-Regular.ttf");
 }
 
 body {
-	background-color: var(--bg-color);
+    background-color: var(--bg-color);
     color: var(--fg-color);
     font-family: Liberation;
     font-size: 15px;
-	margin: auto;
-	max-width: 100%;
+    margin: auto;
+    max-width: 100%;
 }
 
 .flex {
-	display: flex;
-	max-height: 100%;
-	height: 100%;
-	max-width: 100%;
-	width: 100%;
+    display: flex;
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
 }
 
 .header {
-	max-height: 200px;
-	height: 150px;
-	max-width: 100%;
-	width: 100%;
-	overflow: hidden;
+    max-height: 200px;
+    height: 150px;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .nav {
-	max-height: 25px;
-	height: 25px;
-	max-width: 100%;
-	width: 100%;
-	background-color: #181818;
+    max-height: 25px;
+    height: 25px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #181818;
 }
 
 .main {
-	width: 100%;
-	background-color: var(--bg-color);
-	overflow-y: auto;
-	overflow-x: hidden;
+    width: 100%;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .navbar {
-	background-color: #c0c0c0;
-	border-bottom: 1px solid black;
-	color: var(--fg-color);
-	padding-top: 4px;
+    background-color: #c0c0c0;
+    border-bottom: 1px solid black;
+    color: var(--fg-color);
+    padding-top: 4px;
     padding-bottom: 4px;
-	font-family: Liberation;
-	font-size: 15px;
-	@media(prefers-color-scheme: dark) { 
-	    background-color: #2F2F2F;
-	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
+    font-family: Liberation;
+    font-size: 15px;
+    @media(prefers-color-scheme: dark) { 
+        background-color: #2F2F2F;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 .article {
-	background-color: var(--bg-color);
+    background-color: var(--bg-color);
     color: var(--fg-color);
-	padding: 40px;
-	font-family: Liberation;
-	font-size: 15px;
+    padding: 40px;
+    font-family: Liberation;
+    font-size: 15px;
 }
 
 .image-list-small {
-	font-family: Ubuntu;
-	margin: 0 auto;
-	text-align: center;
-	max-width: 100%;
-	padding: 20px;
+    font-family: Ubuntu;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
 }
 
 .image-list-small li {
-	display: inline-block;
-	width: 181px;
-	margin: 0 8px 20px;
+    display: inline-block;
+    width: 181px;
+    margin: 0 8px 20px;
 }
 
 .image-list-small li > a {
-	display: block;
-	text-decoration: none;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 137px;
-	margin: 0;
-	padding: 0;
-	border: 4px solid #ffffff;
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 137px;
+    margin: 0;
+    padding: 0;
+    border: 4px solid #ffffff;
     outline: 1px solid black;
     transition: box-shadow 0.2s ease-in-out;
     @media(prefers-color-scheme: dark) {
@@ -121,30 +121,30 @@ body {
 }
 
 .image-list-small .details {
-	margin-top: 13px;
+    margin-top: 13px;
 }
 
 .image-list-small .details h3 {
-	display: block;
-	font-size: 12px;
-	margin: 0 0 3px 0;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    display: block;
+    font-size: 12px;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .image-list-small .details h3 a {
-	color: #303030;
-	text-decoration: none;
+    color: #303030;
+    text-decoration: none;
 }
 
 .image-list-small .details .image-date {
-	display: block;
-	color: #575652;
-	font-size: 11px;
-	font-weight: normal;
-	margin: 0;
-	@media(prefers-color-scheme: dark) { color: #B1B2B1; }
+    display: block;
+    color: #575652;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+    @media(prefers-color-scheme: dark) { color: #B1B2B1; }
 }
 
 .link {
@@ -153,8 +153,14 @@ body {
     @media(prefers-color-scheme: dark) { color: #73B2CB; }
 }
 
+.image-left {
+    float: left;
+    margin-right: 10px;
+    border: 3px solid black;
+}
+
 @media(max-width:640px) {
-	.main {
-		margin-top:15px;
-	}
+    .main {
+        margin-top:15px;
+    }
 }
