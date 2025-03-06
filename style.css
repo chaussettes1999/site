@@ -3,6 +3,13 @@
 	--fg-color: #2d2d2d;
 }
 
+@media(prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #404040;
+        --fg-color: #c2c2c2;
+    }
+}
+
 @font-face {
 	font-family: Liberation;
 	src: url("fonts/LiberationSans-Regular.ttf");
@@ -61,6 +68,10 @@ body {
     padding-bottom: 4px;
 	font-family: Liberation;
 	font-size: 15px;
+	@media(prefers-color-scheme: dark) { 
+	    background-color: #2F2F2F;
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
 }
 
 .article {
@@ -96,10 +107,17 @@ body {
 	border: 4px solid #ffffff;
     outline: 1px solid black;
     transition: box-shadow 0.2s ease-in-out;
+    @media(prefers-color-scheme: dark) {
+        border: 4px solid #5E5E5E;
+        -webkit-transition: outline 250ms ease-out; 
+        -moz-transition: outline 250ms ease-out;
+        -o-transition: outline 250ms ease-out;
+    }
 }
 
 .image-list-small li > a:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media(prefers-color-scheme: light) { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    @media(prefers-color-scheme: dark) { outline: 1px solid #73B2CB; }
 }
 
 .image-list-small .details {
@@ -126,11 +144,13 @@ body {
 	font-size: 11px;
 	font-weight: normal;
 	margin: 0;
+	@media(prefers-color-scheme: dark) { color: #B1B2B1; }
 }
 
 .link {
     color: #268bd2;
     text-decoration: none;
+    @media(prefers-color-scheme: dark) { color: #73B2CB; }
 }
 
 @media(max-width:640px) {
