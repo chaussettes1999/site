@@ -11,19 +11,14 @@
 }
 
 @font-face {
-    font-family: Liberation;
-    src: url("fonts/LiberationSans-Regular.ttf");
-}
-
-@font-face {
     font-family: Ubuntu;
-    src: url("fonts/Ubuntu-Regular.ttf");
+    src: url("fonts/Ubuntu-R.ttf");
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--fg-color);
-    font-family: Liberation;
+    font-family: Ubuntu;
     font-size: 15px;
     margin: auto;
     max-width: 100%;
@@ -66,7 +61,7 @@ body {
     color: var(--fg-color);
     padding-top: 4px;
     padding-bottom: 4px;
-    font-family: Liberation;
+    font-family: Ubuntu;
     font-size: 15px;
     @media(prefers-color-scheme: dark) { 
         background-color: #2F2F2F;
@@ -78,7 +73,7 @@ body {
     background-color: var(--bg-color);
     color: var(--fg-color);
     padding: 40px;
-    font-family: Liberation;
+    font-family: Ubuntu;
     font-size: 15px;
 }
 
@@ -145,6 +140,13 @@ body {
     font-weight: normal;
     margin: 0;
     @media(prefers-color-scheme: dark) {color: #B1B2B1;}
+}
+
+img:active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); 
 }
 
 .link {
