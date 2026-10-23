@@ -77,7 +77,7 @@ body {
 .article {
     background-color: var(--bg-color);
     color: var(--fg-color);
-    padding: 40px;
+    padding: 30px;
     font-family: Liberation;
     font-size: 15px;
 }
